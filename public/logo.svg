@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+<path d="M0,0 H240 V90 H150 V150 H90 V240 H0 Z" fill="#6E38DF"/>
+<path d="M0,0 H240 V90 H150 V150 H90 V240 H0 Z" fill="#6E38DF" transform="rotate(90 300 300)"/>
+<path d="M0,0 H240 V90 H150 V150 H90 V240 H0 Z" fill="#6E38DF" transform="rotate(180 300 300)"/>
+<path d="M0,0 H240 V90 H150 V150 H90 V240 H0 Z" fill="#6E38DF" transform="rotate(270 300 300)"/>
+<circle cx="300" cy="300" r="120" fill="none" stroke="#6FA5F6" stroke-width="60"/>
+</svg>
