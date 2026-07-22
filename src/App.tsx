@@ -14,6 +14,7 @@ import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
 import CommunityPage from "./pages/CommunityPage";
 import { getAppStoreUrl } from "./utils/appRedirect";
+import Documentation from "./pages/Documentation";
 
 export default function App() {
   const location = useLocation();
@@ -59,6 +60,7 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/community" element={<CommunityPage />} />
+          <Route path="/documentation" element={<Documentation />} />
         </Routes>
       </AnimatePresence>
       <SiteFooter />
