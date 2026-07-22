@@ -1,14 +1,26 @@
 import { Link } from "react-router-dom";
 import PageTransition from "../components/PageTransition";
+import usePageMeta from "../hooks/usePageMeta";
 
 export default function FintechPage() {
+  usePageMeta({
+    title: "Fintech & KYC Address Verification | Maiaddy Loccode",
+    description:
+      "Standardize customer address verification for Nigerian banks and fintechs. Free API for instant, auditable proof of address during onboarding.",
+    canonical: "https://maiaddy.com/solutions/fintech.html",
+    ogTitle: "Fintech & KYC Address Verification | Maiaddy Loccode",
+    ogDescription:
+      "Standardize customer address verification for Nigerian banks and fintechs. Free API for instant, auditable proof of address during onboarding.",
+    ogUrl: "https://maiaddy.com/solutions/fintech.html",
+  });
+
   return (
     <PageTransition>
       <main id="main">
         <section className="page-hero">
           <div className="wrap">
             <p className="breadcrumb">
-              <Link to="/">Home</Link> / Solutions / Fintech
+              <Link to="/">Home</Link> / Solutions / Location verification you can rely on.
             </p>
             <p className="eyebrow" style={{ color: "var(--primary-deep)" }}>
               Fintech &amp; KYC

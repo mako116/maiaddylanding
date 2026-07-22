@@ -1,14 +1,26 @@
 import { Link } from "react-router-dom";
 import PageTransition from "../components/PageTransition";
+import usePageMeta from "../hooks/usePageMeta";
 
 export default function EcommercePage() {
+  usePageMeta({
+    title: "E-commerce Checkout | Maiaddy Loccode",
+    description:
+      "Replace landmark descriptions with verified street loccodes at checkout. Maiaddy auto-fills customer addresses from a simple code, boosting e-commerce conversion.",
+    canonical: "https://maiaddy.com/solutions/ecommerce.html",
+    ogTitle: "E-commerce Checkout | Maiaddy Loccode",
+    ogDescription:
+      "Replace landmark descriptions with verified street loccodes at checkout. Maiaddy auto-fills customer addresses from a simple code, boosting e-commerce conversion.",
+    ogUrl: "https://maiaddy.com/solutions/ecommerce.html",
+  });
+
   return (
     <PageTransition>
       <main id="main">
         <section className="page-hero">
           <div className="wrap">
             <p className="breadcrumb">
-              <Link to="/">Home</Link> / Solutions / E-commerce
+              <Link to="/">Home</Link> / Solutions / A checkout field that actually works.
             </p>
             <p className="eyebrow" style={{ color: "var(--primary-light)" }}>
               E-commerce

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import FaqItem from "../components/FaqItem";
 import PageTransition from "../components/PageTransition";
+import usePageMeta from "../hooks/usePageMeta";
 
 const ALL_FAQS = [
   {
@@ -66,6 +67,17 @@ const ALL_FAQS = [
 ];
 
 export default function FaqPage() {
+  usePageMeta({
+    title: "Frequently Asked Questions | Maiaddy Loccode",
+    description:
+      "Everything about loccodes: how street-level location identity works, API integration, privacy policies, and addressing for Nigeria.",
+    canonical: "https://maiaddy.com/faq.html",
+    ogTitle: "Frequently Asked Questions | Maiaddy Loccode",
+    ogDescription:
+      "Everything about loccodes: how street-level location identity works, API integration, privacy policies, and addressing for Nigeria.",
+    ogUrl: "https://maiaddy.com/faq.html",
+  });
+
   return (
     <PageTransition>
       <main id="main">

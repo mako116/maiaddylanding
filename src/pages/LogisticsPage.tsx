@@ -1,14 +1,26 @@
 import { Link } from "react-router-dom";
 import PageTransition from "../components/PageTransition";
+import usePageMeta from "../hooks/usePageMeta";
 
 export default function LogisticsPage() {
+  usePageMeta({
+    title: "Logistics & Delivery | Maiaddy Loccode",
+    description:
+      "Cut failed and delayed deliveries in Nigeria. Maiaddy provides verifiable street loccodes so logistics fleets navigate to exact addresses without calling for directions.",
+    canonical: "https://maiaddy.com/solutions/logistics.html",
+    ogTitle: "Logistics & Delivery | Maiaddy Loccode",
+    ogDescription:
+      "Cut failed and delayed deliveries in Nigeria. Maiaddy provides verifiable street loccodes so logistics fleets navigate to exact addresses without calling for directions.",
+    ogUrl: "https://maiaddy.com/solutions/logistics.html",
+  });
+
   return (
     <PageTransition>
       <main id="main">
         <section className="page-hero">
           <div className="wrap">
             <p className="breadcrumb">
-              <Link to="/">Home</Link> / Solutions / Logistics
+              <Link to="/">Home</Link> / Solutions / Deliver with certainty, not directions.
             </p>
             <p className="eyebrow" style={{ color: "var(--primary)" }}>
               Logistics &amp; delivery

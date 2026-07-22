@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "./Logo";
+import { getAppStoreUrl } from "../utils/appRedirect";
 
 export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -54,10 +55,16 @@ export default function SiteHeader() {
             {navLink("Fintech", "/fintech")}
             {navLink("Developers", "/developers")}
             {navLink("FAQ", "/faq")}
+            {navLink("About", "/about")}
           </ul>
 
           <div className="nav-cta">
-            <a className="btn btn-primary nav-cta-btn" href="#get-loccode">
+            <a
+              className="btn btn-primary nav-cta-btn"
+              href={getAppStoreUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Get Your Loccode
             </a>
             <button
@@ -116,11 +123,16 @@ export default function SiteHeader() {
                   {navLink("Fintech", "/fintech")}
                   {navLink("Developers", "/developers")}
                   {navLink("FAQ", "/faq")}
+                  {navLink("About", "/about")}
+                  {navLink("Blog", "/blog")}
+                  {navLink("Community", "/community")}
                 </ul>
                 <div className="mobile-sidebar-cta">
                   <a
                     className="btn btn-primary"
-                    href="#get-loccode"
+                    href={getAppStoreUrl()}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{ width: "100%", justifyContent: "center" }}
                   >
                     Get Your Loccode

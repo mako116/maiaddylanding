@@ -4,6 +4,8 @@ import BracketFrame from "../components/BracketFrame";
 import LoccodeChip from "../components/LoccodeChip";
 import FaqItem from "../components/FaqItem";
 import PageTransition from "../components/PageTransition";
+import usePageMeta from "../hooks/usePageMeta";
+import { getAppStoreUrl } from "../utils/appRedirect";
 
 const HOME_FAQS = [
   {
@@ -43,10 +45,25 @@ const cardStagger = {
 
 const cardItem = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.35, ease: "easeOut" as const } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.35, ease: "easeOut" as const },
+  },
 };
 
 export default function HomePage() {
+  usePageMeta({
+    title: "Maiaddy | Loccode: The Address System for Nigeria",
+    description:
+      "Maiaddy builds loccodes — a unique, human-friendly location code for every street in Nigeria. Get a reliable, verifiable digital address, even without a street name.",
+    canonical: "https://maiaddy.com/",
+    ogTitle: "Maiaddy | Loccode: The Address System for Nigeria",
+    ogDescription:
+      "Maiaddy builds loccodes — a unique, human-friendly location code for every street in Nigeria. Get a reliable, verifiable digital address, even without a street name.",
+    ogUrl: "https://maiaddy.com/",
+  });
+
   return (
     <PageTransition>
       <main id="main">
@@ -68,7 +85,12 @@ export default function HomePage() {
                 with certainty.
               </p>
               <div className="hero-ctas">
-                <a className="btn btn-primary" href="#get-loccode">
+                <a
+                  className="btn btn-primary"
+                  href={getAppStoreUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Get Your Loccode
                 </a>
                 <a className="btn btn-ghost" href="#how-it-works">
@@ -119,25 +141,23 @@ export default function HomePage() {
                 Across Nigeria, that assumption breaks down fast. The same
                 location might be "opposite the blue gate," "behind the old
                 market," or "near the mango tree" — different descriptions for
-                one place. That's fine for a conversation. It's a serious problem
-                for a delivery driver, a bank doing KYC, or an ambulance trying
-                to find you at 2&nbsp;a.m.
+                one place. That's fine for a conversation. It's a serious
+                problem for a delivery driver, a bank doing KYC, or an ambulance
+                trying to find you at 2&nbsp;a.m.
               </p>
             </div>
             <div className="panel dark">
-              <p
-                className="eyebrow"
-                style={{ color: "var(--primary-light)" }}
-              >
+              <p className="eyebrow" style={{ color: "var(--primary-light)" }}>
                 The solution
               </p>
               <h2>One street, one code, every address on it verifiable.</h2>
               <p>
                 A loccode is a short, unique code assigned to every street in
                 Nigeria — the core reference for any address on that street.
-                Notable standalone places, like the National Assembly Complex,
-                get their own loccode too. It's unique, human-usable,
-                machine-readable, and built to stay stable over time.
+                Notable standalone places, like the National Assembly Complex
+                and Aso Villa, get their own loccodes too. It's unique,
+                human-usable, machine-readable, and built to stay stable over
+                time.
               </p>
             </div>
           </div>
@@ -268,11 +288,13 @@ export default function HomePage() {
                 Download the app to find your loccode, or integrate the free API
                 to verify addresses at scale.
               </p>
-              <div
-                className="hero-ctas"
-                style={{ justifyContent: "center" }}
-              >
-                <a className="btn btn-on-dark" href="#get-loccode">
+              <div className="hero-ctas" style={{ justifyContent: "center" }}>
+                <a
+                  className="btn btn-on-dark"
+                  href={getAppStoreUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Get Your Loccode
                 </a>
                 <Link

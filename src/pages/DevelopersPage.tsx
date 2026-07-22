@@ -1,8 +1,20 @@
 import { Link } from "react-router-dom";
 import BracketFrame from "../components/BracketFrame";
 import PageTransition from "../components/PageTransition";
+import usePageMeta from "../hooks/usePageMeta";
 
 export default function DevelopersPage() {
+  usePageMeta({
+    title: "Developers & Free API | Maiaddy Loccode",
+    description:
+      "Integrate the free Maiaddy API to verify and auto-fill Nigerian addresses via street loccodes. Endpoints, request shapes, and integration docs for developers.",
+    canonical: "https://maiaddy.com/developers.html",
+    ogTitle: "Developers & Free API | Maiaddy Loccode",
+    ogDescription:
+      "Integrate the free Maiaddy API to verify and auto-fill Nigerian addresses via street loccodes. Endpoints, request shapes, and integration docs for developers.",
+    ogUrl: "https://maiaddy.com/developers.html",
+  });
+
   return (
     <PageTransition>
       <main id="main">
