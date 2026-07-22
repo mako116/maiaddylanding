@@ -5,7 +5,6 @@ import usePageMeta from "../hooks/usePageMeta";
 import { getAppStoreUrl } from "../utils/appRedirect";
 import {
   Database,
-  Search,
   Zap,
   Copy,
   ShoppingCart,
@@ -170,10 +169,7 @@ export default function Documentation() {
   });
 
   const [quickstartTab, setQuickstartTab] = useState<QuickstartTab>("curl");
-  const [searchEndpointTab, setSearchEndpointTab] =
-    useState<QuickstartTab>("curl");
-  const [resolveEndpointTab, setResolveEndpointTab] =
-    useState<QuickstartTab>("curl");
+
   const [activeSidebar, setActiveSidebar] = useState("#overview");
 
   const scrollTo = useCallback((href: string) => {
