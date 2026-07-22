@@ -8,7 +8,7 @@ export default function SiteFooter() {
         <div className="foot-grid">
           <div>
             <Link className="foot-brand" to="/">
-              <Logo fill="#FFFFFF" ring="#6FA5F6" />
+              <Logo fill="#FFFFFF" ring="#6ea4d6" />
               <span>maiaddy</span>
             </Link>
             <p className="foot-desc">

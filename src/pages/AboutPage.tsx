@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import PageTransition from "../components/PageTransition";
 import usePageMeta from "../hooks/usePageMeta";
 import { getAppStoreUrl } from "../utils/appRedirect";
@@ -23,12 +22,16 @@ export default function AboutPage() {
           <div className="grid-pattern" />
           <div className="radial-glow" />
 
-          <div style={{ position: "relative", maxWidth: 800, margin: "0 auto" }}>
+          <div
+            style={{ position: "relative", maxWidth: 800, margin: "0 auto" }}
+          >
             <div className="badge">
               <span className="dot" />
               <span>Location Identity Infrastructure</span>
             </div>
-            <h1 style={{ fontStyle: "italic", fontFamily: "var(--font-display)" }}>
+            <h1
+              style={{ fontStyle: "italic", fontFamily: "var(--font-display)" }}
+            >
               About Maiaddy
             </h1>
             <p
@@ -54,21 +57,21 @@ export default function AboutPage() {
             <div>
               <p>
                 Maiaddy is a technology company focused on location identity. We
-                develop loccodes&mdash;a universal reference system that gives every
-                place in Nigeria a clear, consistent identity.
+                develop loccodes&mdash;a universal reference system that gives
+                every place in Nigeria a clear, consistent identity.
               </p>
               <p>
-                We work at the intersection of physical and digital infrastructure.
-                Our team brings together expertise in geospatial technology, data
-                systems, and emerging market contexts to solve one of the most
-                persistent challenges in global development: the lack of reliable
-                location identifiers.
+                We work at the intersection of physical and digital
+                infrastructure. Our team brings together expertise in geospatial
+                technology, data systems, and emerging market contexts to solve
+                one of the most persistent challenges in global development: the
+                lack of reliable location identifiers.
               </p>
               <p>
                 Founded with the belief that location clarity should be a public
                 good, we build tools that make place referenceable for
-                everyone&mdash;from individuals sharing directions to institutions
-                managing complex logistics.
+                everyone&mdash;from individuals sharing directions to
+                institutions managing complex logistics.
               </p>
             </div>
           </div>
@@ -105,8 +108,9 @@ export default function AboutPage() {
                     <h3>Cross-Sector Collaboration</h3>
                     <p>
                       We work with logistics providers, financial institutions,
-                      government agencies, and technology platforms&mdash;ensuring
-                      loccodes serve diverse needs without fragmentation.
+                      government agencies, and technology
+                      platforms&mdash;ensuring loccodes serve diverse needs
+                      without fragmentation.
                     </p>
                   </div>
                 </div>
@@ -136,30 +140,31 @@ export default function AboutPage() {
             </div>
             <div>
               <p style={{ fontSize: "1.1rem", color: "#ffffff" }}>
-                We concentrate on emerging markets, where the gap between physical
-                reality and digital systems is most acute.
+                We concentrate on emerging markets, where the gap between
+                physical reality and digital systems is most acute.
               </p>
               <p>
-                Across Nigeria, rapid urbanization has outpaced formal addressing
-                infrastructure. Millions of people live and work in places that
-                digital systems struggle to identify. This isn't a temporary
-                problem&mdash;it's a structural gap that limits economic opportunity
-                and service delivery.
+                Across Nigeria, rapid urbanization has outpaced formal
+                addressing infrastructure. Millions of people live and work in
+                places that digital systems struggle to identify. This isn't a
+                temporary problem&mdash;it's a structural gap that limits
+                economic opportunity and service delivery.
               </p>
               <p>
-                We build for these contexts specifically. Our technology accounts
-                for informal settlements, inconsistent addressing standards, and the
-                reality that places evolve faster than traditional systems can map
-                them. By creating a reference layer that works regardless of formal
-                infrastructure, we help close the gap between physical and digital
-                economies.
+                We build for these contexts specifically. Our technology
+                accounts for informal settlements, inconsistent addressing
+                standards, and the reality that places evolve faster than
+                traditional systems can map them. By creating a reference layer
+                that works regardless of formal infrastructure, we help close
+                the gap between physical and digital economies.
               </p>
               <div className="quote-card">
                 <p>
-                  &ldquo;Our goal is to make location reference as reliable in Lagos
-                  or Kaduna as it is in London or New York&mdash;not by imposing
-                  foreign systems, but by building infrastructure that respects
-                  local context while providing global consistency.&rdquo;
+                  &ldquo;Our goal is to make location reference as reliable in
+                  Lagos or Kaduna as it is in London or New York&mdash;not by
+                  imposing foreign systems, but by building infrastructure that
+                  respects local context while providing global
+                  consistency.&rdquo;
                 </p>
               </div>
             </div>
@@ -176,9 +181,9 @@ export default function AboutPage() {
             <div>
               <p>
                 We create and maintain the loccode system: a standardized way to
-                identify any physical location with a unique, human-friendly code.
-                Loccodes work everywhere&mdash;whether a place has a formal street
-                address or not.
+                identify any physical location with a unique, human-friendly
+                code. Loccodes work everywhere&mdash;whether a place has a
+                formal street address or not.
               </p>
 
               <div className="capabilities-grid">
@@ -273,12 +278,12 @@ export default function AboutPage() {
               </div>
 
               <p>
-                We provide the infrastructure that allows businesses, governments,
-                and individuals to reference location with certainty. Our technology
-                serves logistics companies ensuring deliveries reach their
-                destination, financial institutions verifying customer locations,
-                emergency services responding to calls, and urban planners building
-                for the future.
+                We provide the infrastructure that allows businesses,
+                governments, and individuals to reference location with
+                certainty. Our technology serves logistics companies ensuring
+                deliveries reach their destination, financial institutions
+                verifying customer locations, emergency services responding to
+                calls, and urban planners building for the future.
               </p>
             </div>
           </div>
@@ -292,19 +297,19 @@ export default function AboutPage() {
             </h2>
             <p style={{ fontSize: "1.1rem", color: "#ffffff" }}>
               We are committed to building infrastructure that serves the public
-              interest. This means maintaining the integrity of the loccode system,
-              ensuring it remains free from political or commercial capture, and
-              prioritizing reliability over rapid growth.
+              interest. This means maintaining the integrity of the loccode
+              system, ensuring it remains free from political or commercial
+              capture, and prioritizing reliability over rapid growth.
             </p>
             <p>
-              We do not sell personal location data. We do not build surveillance
-              tools. We create reference systems that help people and organizations
-              coordinate more effectively&mdash;nothing more.
+              We do not sell personal location data. We do not build
+              surveillance tools. We create reference systems that help people
+              and organizations coordinate more effectively&mdash;nothing more.
             </p>
             <p>
               Location is fundamental to how society functions. It deserves
-              infrastructure built with the same care as the systems we rely on for
-              communication, identity, and commerce.
+              infrastructure built with the same care as the systems we rely on
+              for communication, identity, and commerce.
             </p>
           </div>
         </section>
@@ -322,7 +327,9 @@ export default function AboutPage() {
           <div className="grid-pattern" />
           <div className="radial-glow" />
 
-          <div style={{ position: "relative", maxWidth: 700, margin: "0 auto" }}>
+          <div
+            style={{ position: "relative", maxWidth: 700, margin: "0 auto" }}
+          >
             <h2
               style={{
                 fontSize: "clamp(2.2rem, 4vw, 3.5rem)",
@@ -339,7 +346,8 @@ export default function AboutPage() {
               }}
             >
               Whether you&apos;re integrating loccodes into your platform or
-              exploring partnership opportunities, we&apos;d like to hear from you.
+              exploring partnership opportunities, we&apos;d like to hear from
+              you.
             </p>
             <div
               style={{
